@@ -1,6 +1,6 @@
 import React from 'react';
 import { Metadata } from 'next';
-import { getAllUser } from '@/lib/getAllUsers';
+import { getAllUsers } from '@/lib/getAllUsers';
 
 export const metadata: Metadata = {
   title: 'Users',
@@ -8,4 +8,4 @@ export const metadata: Metadata = {
 
 const UsersPage = async () => {
   return <div>page</div>;
-}
+};

@@ -1,6 +1,6 @@
 import * as v from 'valibot';
 
-export const userSchema = v.object({
+export const UserSchema = v.object({
   id: v.number(),
   name: v.string(),
   username: v.string(),
@@ -23,3 +23,5 @@ export const userSchema = v.object({
     bs: v.string(),
   }),
 });
+
+export const UsersArraySchema = v.array(UserSchema);

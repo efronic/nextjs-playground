@@ -7,7 +7,7 @@ type Post = {
   body: string;
 };
 
-type UserRaw = {
+type User = {
   id: number;
   name: string;
   username: string;
@@ -30,4 +30,3 @@ type UserRaw = {
     bs: string;
   };
 };
-type User = Output<typeof userSchema>;

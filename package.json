@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "check-node-version --node $(cat .nvmrc) && next dev",
+    "build": "check-node-version --node $(cat .nvmrc) && next build",
+    "start": "check-node-version --node $(cat .nvmrc) && next start",
+    "lint": "check-node-version --node $(cat .nvmrc) && next lint"
   },
   "dependencies": {
     "next": "14.1.0",
@@ -19,6 +19,7 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
+    "check-node-version": "^4.2.1",
     "eslint": "^8",
     "eslint-config-next": "14.1.0",
     "postcss": "^8",

@@ -23,5 +23,14 @@ export const UserSchema = v.object({
     bs: v.string(),
   }),
 });
-
 export const UsersArraySchema = v.array(UserSchema);
+
+export const PostSchema = v.object({
+  userId: v.number('userId should be a number'),
+  id: v.number('id should be a number'),
+  title: v.string(),
+  body: v.string(),
+});
+
+export const PostsArraySchema = v.array(PostSchema);
+

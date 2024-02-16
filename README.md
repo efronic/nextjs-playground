@@ -30,11 +30,11 @@ To learn more about Next.js, take a look at the following resources:
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
 
-## Using Validbot and Check-Node-Version
+## Using valibot and Check-Node-Version
 
-This project uses two important packages to ensure code quality and compatibility: validbot and check-node-version.
+This project uses two important packages to ensure code quality and compatibility: valibot and check-node-version.
 
-## validbot
+## valibot
 
 The core function of Valibot is to create a schema that describes a structured data set. A schema can be compared to a type definition in TypeScript. The big difference is that TypeScript types are "not executed" and are more or less a DX feature. A schema on the other hand, apart from the inferred type definition, can also be executed at runtime to guarantee type safety of unknown data.
 

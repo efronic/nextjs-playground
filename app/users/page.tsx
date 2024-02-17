@@ -1,4 +1,3 @@
-import React from 'react';
 import { Metadata } from 'next';
 import { getAllUsers } from '@/lib/getAllUsers';
 import { User } from '@/types';

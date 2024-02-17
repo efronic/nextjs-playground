@@ -33,4 +33,3 @@ export const PostSchema = v.object({
 });
 
 export const PostsArraySchema = v.array(PostSchema);
-

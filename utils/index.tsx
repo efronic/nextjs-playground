@@ -33,3 +33,24 @@ export const PostSchema = v.object({
 });
 
 export const PostsArraySchema = v.array(PostSchema);
+
+export const ResultSchema = v.object({
+  pageid: v.string(),
+  title: v.string(),
+  extract: v.string(),
+  thumbnail: v.optional(
+    v.object({
+      source: v.string(),
+      width: v.number('width should be a number'),
+      height: v.number('height should be a number'),
+    })
+  ),
+});
+
+export const SearchResultSchema = v.object({
+  query: v.optional(
+    v.object({
+      pages: v.optional(v.array(ResultSchema)),
+    })
+  ),
+});
